@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Miner&iacute;a de Datos EDID 2024</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <div>
+            <p class="eyebrow">Encuesta EDID 2024 - DANE</p>
+            <h1>Sistema de Miner&iacute;a de Datos</h1>
+            <p class="header-summary">
+                Transformando datos p&uacute;blicos en conocimiento estrat&eacute;gico para analizar el funcionamiento institucional,
+                el desempe&ntilde;o administrativo y el ambiente organizacional en las gobernaciones del pa&iacute;s.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section" aria-label="Informacion general del proyecto">
+            <article>
+                <span class="section-label">Objetivo general</span>
+                <h2>An&aacute;lisis avanzado de datos institucionales</h2>
+                <p>
+                    Esta aplicaci&oacute;n web integra visualizaci&oacute;n, miner&iacute;a de datos e inteligencia anal&iacute;tica
+                    para convertir informaci&oacute;n estad&iacute;stica oficial en conocimiento &uacute;til.
+                </p>
+            </article>
+            <article>
+                <span class="section-label">Dataset utilizado</span>
+                <h2>Encuesta sobre Ambiente y Desempe&ntilde;o Institucional Departamental</h2>
+                <p>
+                    El proyecto utiliza datos de la EDID 2024, con miles de registros, m&aacute;s de 200 variables
+                    y mediciones regionales, administrativas, categ&oacute;ricas, ordinales y num&eacute;ricas.
+                </p>
+            </article>
+            <article>
+                <span class="section-label">Metodolog&iacute;a</span>
+                <h2>SEMMA</h2>
+                <p>
+                    El proceso contempla selecci&oacute;n de variables, exploraci&oacute;n estad&iacute;stica y visual,
+                    limpieza, transformaci&oacute;n y preparaci&oacute;n de los datos para su an&aacute;lisis.
+                </p>
+            </article>
+        </section>
+
+        <section class="tech-strip" aria-label="Tecnologias utilizadas">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Power BI</span>
+            <span>Orange Data Mining</span>
+            <span>Apache Spark</span>
+        </section>
+
+        <section class="levels-grid" aria-label="Paneles principales de niveles de conocimiento">
+            <article class="level-panel">
+                <div class="panel-header">
+                    <span class="level-number">Nivel 1</span>
+                    <h2>Conocimiento Evidente</h2>
+                </div>
+                <p class="level-description">
+                    Dashboards anal&iacute;ticos para visualizar indicadores institucionales, comparaciones regionales,
+                    distribuciones estad&iacute;sticas, tendencias administrativas y comportamientos organizacionales.
+                </p>
+                <div class="dashboard-frame">
+                    <iframe
+                        title="MD_Nivel_1"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiNjRkY2Y3OTQtYzY0My00YWM3LTk5MmItNDdjMWY2YjUzODVlIiwidCI6IjA3ZGE2N2EwLTFmNDMtNGU4Yy05NzdmLTVmODhiNjQ3MGVlNiIsImMiOjR9"
+                        frameborder="0"
+                        allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="conclusions-box">
+                    <h3>Conclusiones</h3>
+                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento evidente.</p>
+                </div>
+            </article>
+
+            <article class="level-panel">
+                <div class="panel-header">
+                    <span class="level-number">Nivel 2</span>
+                    <h2>Conocimiento Multidimensional</h2>
+                </div>
+                <p class="level-description">
+                    Modelo estrella para organizar la informaci&oacute;n anal&iacute;tica mediante tablas de hechos,
+                    dimensiones, consultas anal&iacute;ticas e indicadores multidimensionales.
+                </p>
+                <figure class="image-frame">
+                    <img src="{{ url_for('static', filename='img/Modelo_Nivel_2.jpeg') }}" alt="Modelo del nivel 2 de conocimiento multidimensional">
+                </figure>
+                <div class="conclusions-box">
+                    <h3>Conclusiones</h3>
+                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento multidimensional.</p>
+                </div>
+            </article>
+
+            <article class="level-panel">
+                <div class="panel-header">
+                    <span class="level-number">Nivel 3</span>
+                    <h2>Conocimiento Oculto</h2>
+                </div>
+                <p class="level-description">
+                    Aplicaci&oacute;n de clustering para descubrir grupos de comportamiento similares, tendencias
+                    institucionales, relaciones entre variables y segmentaciones organizacionales.
+                </p>
+                <div class="empty-state">
+                    <p>Contenido pendiente de Orange Data Mining.</p>
+                </div>
+                <div class="conclusions-box">
+                    <h3>Conclusiones</h3>
+                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento oculto.</p>
+                </div>
+            </article>
+
+            <article class="level-panel">
+                <div class="panel-header">
+                    <span class="level-number">Nivel 4</span>
+                    <h2>Conocimiento Profundo</h2>
+                </div>
+                <p class="level-description">
+                    Procesamiento distribuido con Apache Spark para entrenamiento de modelos, evaluaci&oacute;n
+                    de m&eacute;tricas y an&aacute;lisis avanzado de grandes vol&uacute;menes de datos.
+                </p>
+                <div class="empty-state">
+                    <p>Contenido pendiente de Apache Spark.</p>
+                </div>
+                <div class="conclusions-box">
+                    <h3>Conclusiones</h3>
+                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento profundo.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="closing-section" aria-label="Conclusion general">
+            <span class="section-label">Conclusi&oacute;n general</span>
+            <p>
+                La plataforma permite descubrir conocimiento evidente, multidimensional, oculto y profundo,
+                facilitando el an&aacute;lisis institucional y fortaleciendo la interpretaci&oacute;n de datos en el contexto
+                territorial colombiano.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
