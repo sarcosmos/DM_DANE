@@ -74,7 +74,13 @@
                 </div>
                 <div class="conclusions-box">
                     <h3>Conclusiones</h3>
-                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento evidente.</p>
+                    <ul>
+                        <li>El an&aacute;lisis descriptivo permiti&oacute; identificar patrones visibles relacionados con satisfacci&oacute;n laboral, desempe&ntilde;o institucional y transformaci&oacute;n digital.</li>
+                        <li>Los resultados evidenciaron niveles altos de satisfacci&oacute;n laboral, con promedios superiores a 4 puntos en la mayor&iacute;a de regiones.</li>
+                        <li>El nivel tecnol&oacute;gico predominante fue intermedio, lo que indica el uso de herramientas tecnol&oacute;gicas de complejidad moderada.</li>
+                        <li>El grupo profesional represent&oacute; la mayor proporci&oacute;n de participantes dentro de la muestra analizada.</li>
+                        <li>El dashboard interactivo facilit&oacute; la exploraci&oacute;n visual y transform&oacute; informaci&oacute;n estad&iacute;stica en conocimiento evidente.</li>
+                    </ul>
                 </div>
             </article>
 
@@ -92,7 +98,13 @@
                 </figure>
                 <div class="conclusions-box">
                     <h3>Conclusiones</h3>
-                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento multidimensional.</p>
+                    <ul>
+                        <li>El modelo estrella organiz&oacute; la informaci&oacute;n en una tabla de hechos y dimensiones de regi&oacute;n, demograf&iacute;a, percepci&oacute;n y seguridad.</li>
+                        <li>Las consultas DAX permitieron generar indicadores anal&iacute;ticos relevantes para el estudio.</li>
+                        <li>La percepci&oacute;n promedio fue de 3.73 y el &iacute;ndice general de 3.71, mostrando una tendencia moderadamente positiva.</li>
+                        <li>El &iacute;ndice de satisfacci&oacute;n fue de 2.08, se&ntilde;alando percepciones menos favorables en algunas variables de seguridad y servicios.</li>
+                        <li>Se identificaron perfiles demogr&aacute;ficos diferenciados, patrones de percepci&oacute;n, segmentaci&oacute;n regional y 326 registros asociados a percepci&oacute;n positiva.</li>
+                    </ul>
                 </div>
             </article>
 
@@ -105,12 +117,18 @@
                     Aplicaci&oacute;n de clustering para descubrir grupos de comportamiento similares, tendencias
                     institucionales, relaciones entre variables y segmentaciones organizacionales.
                 </p>
-                <div class="empty-state">
-                    <p>Contenido pendiente de Orange Data Mining.</p>
-                </div>
+                <figure class="image-frame">
+                    <img src="{{ url_for('static', filename='img/Orange_Nivel_3.jpeg') }}" alt="Visualizacion del nivel 3 en Orange Data Mining">
+                </figure>
                 <div class="conclusions-box">
                     <h3>Conclusiones</h3>
-                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento oculto.</p>
+                    <ul>
+                        <li>Se implement&oacute; exitosamente un proceso de miner&iacute;a de datos utilizando Orange Data Mining.</li>
+                        <li>La preparaci&oacute;n incluy&oacute; transformaci&oacute;n de variables categ&oacute;ricas y normalizaci&oacute;n de variables num&eacute;ricas.</li>
+                        <li>El algoritmo k-Means permiti&oacute; identificar tres segmentos principales dentro del dataset.</li>
+                        <li>La aplicaci&oacute;n de PCA facilit&oacute; la representaci&oacute;n visual de los clusters generados.</li>
+                        <li>El Scatter Plot evidenci&oacute; separaci&oacute;n clara entre grupos, indicando patrones ocultos en los datos.</li>
+                    </ul>
                 </div>
             </article>
 
@@ -133,13 +151,52 @@
             </article>
         </section>
 
-        <section class="closing-section" aria-label="Conclusion general">
-            <span class="section-label">Conclusi&oacute;n general</span>
-            <p>
-                La plataforma permite descubrir conocimiento evidente, multidimensional, oculto y profundo,
-                facilitando el an&aacute;lisis institucional y fortaleciendo la interpretaci&oacute;n de datos en el contexto
-                territorial colombiano.
-            </p>
+        <section class="comparison-section" aria-label="Cuadro comparativo entre niveles de conocimiento">
+            <span class="section-label">Cuadro comparativo</span>
+            <h2>Comparaci&oacute;n entre niveles de conocimiento</h2>
+            <div class="comparison-table-wrap">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Tipo de conocimiento</th>
+                            <th>Enfoque</th>
+                            <th>Herramienta principal</th>
+                            <th>Resultado obtenido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nivel 1</td>
+                            <td>Conocimiento Evidente</td>
+                            <td>An&aacute;lisis descriptivo y visual de indicadores institucionales.</td>
+                            <td>Power BI</td>
+                            <td>Identificaci&oacute;n de patrones visibles en satisfacci&oacute;n laboral, desempe&ntilde;o institucional y transformaci&oacute;n digital.</td>
+                        </tr>
+                        <tr>
+                            <td>Nivel 2</td>
+                            <td>Conocimiento Multidimensional</td>
+                            <td>Organizaci&oacute;n de datos mediante modelo estrella, hechos, dimensiones e indicadores.</td>
+                            <td>Modelo multidimensional y DAX</td>
+                            <td>Segmentaci&oacute;n regional, perfiles demogr&aacute;ficos, indicadores de percepci&oacute;n y an&aacute;lisis desde varias perspectivas.</td>
+                        </tr>
+                        <tr>
+                            <td>Nivel 3</td>
+                            <td>Conocimiento Oculto</td>
+                            <td>Miner&iacute;a de datos para descubrir agrupaciones y relaciones no evidentes.</td>
+                            <td>Orange Data Mining</td>
+                            <td>Identificaci&oacute;n de tres clusters principales y patrones ocultos mediante k-Means, PCA y Scatter Plot.</td>
+                        </tr>
+                        <tr class="pending-row">
+                            <td>Nivel 4</td>
+                            <td>Conocimiento Profundo</td>
+                            <td>Espacio pendiente para an&aacute;lisis avanzado y procesamiento distribuido.</td>
+                            <td>Apache Spark</td>
+                            <td>Espacio reservado para agregar resultados y conclusiones del nivel 4.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 </body>
