@@ -1,0 +1,149 @@
+ACTUALIZACIONES PARA LA PÁGINA WEB DEL PROYECTO
+
+Sitio web:
+https://dm-dane-l55h.vercel.app/
+
+==================================================
+1. ACTUALIZAR TÍTULO PRINCIPAL DEL PROYECTO
+==================================================
+
+Reemplazar el título actual por:
+
+“Análisis de opinión en Encuestas Regionales del DANE”
+
+El enfoque visual y textual del proyecto debe centrarse en:
+- análisis de percepciones,
+- evaluación institucional,
+- minería de datos aplicada,
+- y descubrimiento de patrones en encuestas gubernamentales.
+
+==================================================
+2. AGREGAR CONTEXTO DE LA PROBLEMÁTICA
+==================================================
+
+Agregar una nueva sección antes de los niveles de conocimiento o cerca del inicio del dashboard.
+
+TÍTULO:
+“Contexto de la problemática”
+
+CONTENIDO:
+“La Encuesta sobre Ambiente y Desempeño Institucional Departamental (EDID 2024) recopila opiniones de servidores públicos acerca del ambiente laboral, desempeño institucional, recursos tecnológicos, talento humano y rendición de cuentas dentro de entidades públicas.
+
+El gran volumen de datos y la cantidad de variables dificultan la identificación manual de patrones relevantes entre regiones y perfiles laborales. Por ello, se aplican técnicas de minería de datos, análisis multidimensional y procesamiento analítico avanzado para descubrir relaciones, tendencias y comportamientos ocultos que apoyen la toma de decisiones basada en datos.”
+
+Diseño sugerido:
+- Mostrar esta sección como un bloque destacado.
+- Incluir iconos relacionados con analítica, gobierno y datos.
+- Agregar una breve introducción visual antes del contenido técnico.
+
+==================================================
+3. AGREGAR NUEVA SECCIÓN DE CONTEXTO Y DATASET
+==================================================
+
+Agregar dos tarjetas o bloques informativos como los mostrados en la imagen adjunta.
+
+TÍTULO 1:
+“Contexto del problema”
+
+CONTENIDO:
+“La EDID 2024 recoge percepciones de servidores públicos sobre ambiente y desempeño institucional. El objetivo del análisis es preparar la base con PySpark, calcular indicadores por bloques de preguntas y comparar patrones por región y perfil laboral.”
+
+TÍTULO 2:
+“Descripción del dataset utilizado”
+
+CONTENIDO:
+“Se cargaron 10,994 registros y 247 columnas desde EDID_REGION.csv. El XML DDI se usó como diccionario para interpretar códigos como REGION, B02, B04, B06, C01A y FEXPFINAL.
+
+Factor de expansión final corregido con el factor de cobertura.”
+
+Diseño sugerido:
+- Mantener el mismo estilo visual actual de las cards.
+- Mostrar ambas tarjetas en una misma fila responsive.
+- Utilizar colores coherentes con el dashboard actual.
+
+==================================================
+4. AGREGAR INFORMACIÓN AL NIVEL 4
+(CONOCIMIENTO PROFUNDO)
+==================================================
+
+Dentro de la sección:
+“Nivel 4: Conocimiento Profundo”
+
+Agregar un nuevo bloque llamado:
+
+“Resultados de transformaciones y consultas analíticas”
+
+CONTENIDO:
+“Se convirtieron respuestas a formato numérico, se trataron códigos 8, 9, 88 y 99 como no respuesta, y se construyeron indicadores promedio por bloques: C ambiente, D talento humano, E recursos TIC, F desempeño y G rendición de cuentas.
+
+En los resultados ponderados por FEXPFINAL, la región 2 presenta el mayor índice de ambiente (3.177). En la consulta SQL simple, la región 4 lidera con ambiente promedio 3.160.”
+
+==================================================
+5. AGREGAR CONCLUSIONES EN EL NIVEL 4
+==================================================
+
+Agregar una subsección:
+“Conclusiones”
+
+CONTENIDO:
+- “Por región, el ambiente ponderado más alto aparece en la región 2 (3.177) y el más bajo en la región 1 (3.075); la consulta muestra diferencias pequeñas entre regiones.”
+
+- “La consulta SQL simple confirma el mismo patrón general: la región 4 lidera en ambiente (3.160) y la región 5 queda con el menor promedio (3.063).”
+
+- “En población expandida, la región 4 concentra el mayor peso (6024), por eso los promedios ponderados son la mejor referencia para una lectura poblacional.”
+
+- “Por perfil laboral, el desempeño ponderado más alto está en B02 2, sexo 1 (2.524); el talento humano más alto está en B02 1, sexo 1 (3.709).”
+
+- “Las correlaciones de las consultas sugieren que ambiente se asocia más con talento humano (0.664) que con desempeño (0.443) o TIC (0.235).”
+
+Diseño sugerido:
+- Mostrar las conclusiones como lista destacada.
+- Utilizar iconos o separadores visuales.
+- Mantener coherencia con las demás secciones analíticas.
+
+==================================================
+6. ACTUALIZAR TABLA COMPARATIVA ENTRE LOS NIVELES
+==================================================
+
+Modificar la tabla comparativa de niveles para reflejar mejor los resultados reales del proyecto.
+
+La tabla debe incluir:
+
+| Nivel | Tipo de conocimiento | Herramienta | Resultado principal |
+|-------|----------------------|-------------|---------------------|
+| Nivel 1 | Conocimiento evidente | Power BI | Visualización de indicadores y patrones regionales |
+| Nivel 2 | Conocimiento multidimensional | SQL Server | Modelo estrella y consultas OLAP |
+| Nivel 3 | Conocimiento oculto | Orange | Clustering y segmentación de perfiles |
+| Nivel 4 | Conocimiento profundo | Spark ML / PySpark | Transformaciones, análisis ponderado y correlaciones |
+
+Agregar también:
+- Indicadores visuales por nivel.
+- Diferenciación de colores por categoría.
+- Responsive design para móviles.
+
+==================================================
+7. AJUSTES GENERALES RECOMENDADOS
+==================================================
+
+- Mantener consistencia visual entre secciones.
+- Mejorar espaciado vertical entre bloques.
+- Destacar estadísticas importantes con cards o badges.
+- Resaltar métricas clave como:
+  • 10,994 registros
+  • 247 variables
+  • Región 2 → índice ambiente 3.177
+  • Correlación ambiente-talento humano 0.664
+
+- Agregar animaciones suaves en scroll si es posible.
+- Mantener compatibilidad responsive.
+
+==================================================
+8. OBJETIVO VISUAL GENERAL
+==================================================
+
+La página debe transmitir:
+- análisis de datos gubernamentales,
+- minería de datos aplicada,
+- procesamiento analítico multinivel,
+- descubrimiento de patrones,
+- y soporte a la toma de decisiones basada en datos.

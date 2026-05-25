@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Miner&iacute;a de Datos EDID 2024</title>
+    <title>An&aacute;lisis de opini&oacute;n en Encuestas Regionales del DANE</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header class="site-header">
         <div>
             <p class="eyebrow">Encuesta EDID 2024 - DANE</p>
-            <h1>Sistema de Miner&iacute;a de Datos</h1>
+            <h1>An&aacute;lisis de opini&oacute;n en Encuestas Regionales del DANE</h1>
             <p class="header-summary">
-                Transformando datos p&uacute;blicos en conocimiento estrat&eacute;gico para analizar el funcionamiento institucional,
-                el desempe&ntilde;o administrativo y el ambiente organizacional en las gobernaciones del pa&iacute;s.
+                Miner&iacute;a de datos aplicada al an&aacute;lisis de percepciones, evaluaci&oacute;n institucional
+                y descubrimiento de patrones en encuestas gubernamentales.
             </p>
         </div>
     </header>
@@ -43,6 +43,78 @@
                     El proceso contempla selecci&oacute;n de variables, exploraci&oacute;n estad&iacute;stica y visual,
                     limpieza, transformaci&oacute;n y preparaci&oacute;n de los datos para su an&aacute;lisis.
                 </p>
+            </article>
+        </section>
+
+        <section class="problem-section" aria-label="Contexto de la problematica">
+            <div class="problem-heading">
+                <span class="section-label">Anal&iacute;tica gubernamental</span>
+                <h2>Contexto de la problem&aacute;tica</h2>
+                <p>
+                    La lectura de encuestas institucionales requiere conectar percepciones, regiones y perfiles
+                    laborales para convertir respuestas individuales en evidencia accionable.
+                </p>
+            </div>
+            <div class="problem-content">
+                <div class="problem-icons" aria-hidden="true">
+                    <span>Datos</span>
+                    <span>Gobierno</span>
+                    <span>Patrones</span>
+                </div>
+                <p>
+                    La Encuesta sobre Ambiente y Desempe&ntilde;o Institucional Departamental (EDID 2024)
+                    recopila opiniones de servidores p&uacute;blicos acerca del ambiente laboral, desempe&ntilde;o
+                    institucional, recursos tecnol&oacute;gicos, talento humano y rendici&oacute;n de cuentas dentro
+                    de entidades p&uacute;blicas.
+                </p>
+                <p>
+                    El gran volumen de datos y la cantidad de variables dificultan la identificaci&oacute;n manual
+                    de patrones relevantes entre regiones y perfiles laborales. Por ello, se aplican t&eacute;cnicas
+                    de miner&iacute;a de datos, an&aacute;lisis multidimensional y procesamiento anal&iacute;tico avanzado para
+                    descubrir relaciones, tendencias y comportamientos ocultos que apoyen la toma de decisiones
+                    basada en datos.
+                </p>
+            </div>
+        </section>
+
+        <section class="context-cards" aria-label="Contexto y dataset utilizado">
+            <article>
+                <span class="info-badge">Problema</span>
+                <h2>Contexto del problema</h2>
+                <p>
+                    La EDID 2024 recoge percepciones de servidores p&uacute;blicos sobre ambiente y desempe&ntilde;o
+                    institucional. El objetivo del an&aacute;lisis es preparar la base con PySpark, calcular indicadores
+                    por bloques de preguntas y comparar patrones por regi&oacute;n y perfil laboral.
+                </p>
+            </article>
+            <article>
+                <span class="info-badge">Dataset</span>
+                <h2>Descripci&oacute;n del dataset utilizado</h2>
+                <p>
+                    Se cargaron <strong>10,994 registros</strong> y <strong>247 columnas</strong> desde
+                    EDID_REGION.csv. El XML DDI se us&oacute; como diccionario para interpretar c&oacute;digos como
+                    REGION, B02, B04, B06, C01A y FEXPFINAL.
+                </p>
+                <p>Factor de expansi&oacute;n final corregido con el factor de cobertura.</p>
+            </article>
+        </section>
+
+        <section class="metrics-strip" aria-label="Metricas clave del proyecto">
+            <article>
+                <span>10,994</span>
+                <p>registros</p>
+            </article>
+            <article>
+                <span>247</span>
+                <p>variables</p>
+            </article>
+            <article>
+                <span>3.177</span>
+                <p>ambiente en regi&oacute;n 2</p>
+            </article>
+            <article>
+                <span>0.664</span>
+                <p>correlaci&oacute;n ambiente-talento humano</p>
             </article>
         </section>
 
@@ -139,60 +211,71 @@
                 </div>
                 <p class="level-description">
                     Procesamiento distribuido con Apache Spark para entrenamiento de modelos, evaluaci&oacute;n
-                    de m&eacute;tricas y an&aacute;lisis avanzado de grandes vol&uacute;menes de datos.
+                    de m&eacute;tricas, an&aacute;lisis ponderado y correlaciones sobre grandes vol&uacute;menes de datos.
                 </p>
-                <div class="empty-state">
-                    <p>Contenido pendiente de Apache Spark.</p>
+                <div class="analysis-box">
+                    <h3>Resultados de transformaciones y consultas anal&iacute;ticas</h3>
+                    <p>
+                        Se convirtieron respuestas a formato num&eacute;rico, se trataron c&oacute;digos 8, 9, 88 y 99
+                        como no respuesta, y se construyeron indicadores promedio por bloques: C ambiente,
+                        D talento humano, E recursos TIC, F desempe&ntilde;o y G rendici&oacute;n de cuentas.
+                    </p>
+                    <p>
+                        En los resultados ponderados por FEXPFINAL, la regi&oacute;n 2 presenta el mayor &iacute;ndice
+                        de ambiente (3.177). En la consulta SQL simple, la regi&oacute;n 4 lidera con ambiente
+                        promedio 3.160.
+                    </p>
                 </div>
                 <div class="conclusions-box">
                     <h3>Conclusiones</h3>
-                    <p>Escribe aqu&iacute; tus conclusiones sobre el conocimiento profundo.</p>
+                    <ul>
+                        <li>Por regi&oacute;n, el ambiente ponderado m&aacute;s alto aparece en la regi&oacute;n 2 (3.177) y el m&aacute;s bajo en la regi&oacute;n 1 (3.075); la consulta muestra diferencias peque&ntilde;as entre regiones.</li>
+                        <li>La consulta SQL simple confirma el mismo patr&oacute;n general: la regi&oacute;n 4 lidera en ambiente (3.160) y la regi&oacute;n 5 queda con el menor promedio (3.063).</li>
+                        <li>En poblaci&oacute;n expandida, la regi&oacute;n 4 concentra el mayor peso (6024), por eso los promedios ponderados son la mejor referencia para una lectura poblacional.</li>
+                        <li>Por perfil laboral, el desempe&ntilde;o ponderado m&aacute;s alto est&aacute; en B02 2, sexo 1 (2.524); el talento humano m&aacute;s alto est&aacute; en B02 1, sexo 1 (3.709).</li>
+                        <li>Las correlaciones de las consultas sugieren que ambiente se asocia m&aacute;s con talento humano (0.664) que con desempe&ntilde;o (0.443) o TIC (0.235).</li>
+                    </ul>
                 </div>
             </article>
         </section>
 
         <section class="comparison-section" aria-label="Cuadro comparativo entre niveles de conocimiento">
             <span class="section-label">Cuadro comparativo</span>
-            <h2>Comparaci&oacute;n entre niveles de conocimiento</h2>
+            <h2>Comparaci&oacute;n entre conclusiones y resultados por nivel</h2>
             <div class="comparison-table-wrap">
                 <table class="comparison-table">
                     <thead>
                         <tr>
                             <th>Nivel</th>
                             <th>Tipo de conocimiento</th>
-                            <th>Enfoque</th>
-                            <th>Herramienta principal</th>
-                            <th>Resultado obtenido</th>
+                            <th>Resultados principales</th>
+                            <th>Conclusiones del nivel</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Nivel 1</td>
+                        <tr class="level-visual level-1">
+                            <td><span class="table-indicator"></span>Nivel 1</td>
                             <td>Conocimiento Evidente</td>
-                            <td>An&aacute;lisis descriptivo y visual de indicadores institucionales.</td>
-                            <td>Power BI</td>
-                            <td>Identificaci&oacute;n de patrones visibles en satisfacci&oacute;n laboral, desempe&ntilde;o institucional y transformaci&oacute;n digital.</td>
+                            <td>Dashboard en Power BI para visualizar indicadores institucionales, patrones regionales, satisfacci&oacute;n laboral, desempe&ntilde;o y transformaci&oacute;n digital.</td>
+                            <td>El an&aacute;lisis descriptivo permiti&oacute; identificar patrones visibles; la mayor&iacute;a de regiones presentan promedios superiores a 4 puntos y el perfil profesional concentra una proporci&oacute;n importante de participantes.</td>
                         </tr>
-                        <tr>
-                            <td>Nivel 2</td>
+                        <tr class="level-visual level-2">
+                            <td><span class="table-indicator"></span>Nivel 2</td>
                             <td>Conocimiento Multidimensional</td>
-                            <td>Organizaci&oacute;n de datos mediante modelo estrella, hechos, dimensiones e indicadores.</td>
-                            <td>Modelo multidimensional y DAX</td>
-                            <td>Segmentaci&oacute;n regional, perfiles demogr&aacute;ficos, indicadores de percepci&oacute;n y an&aacute;lisis desde varias perspectivas.</td>
+                            <td>Modelo estrella con tabla de hechos, dimensiones de regi&oacute;n, demograf&iacute;a, percepci&oacute;n y seguridad, adem&aacute;s de indicadores anal&iacute;ticos.</td>
+                            <td>Las consultas permitieron analizar la informaci&oacute;n desde varias perspectivas; se observaron una percepci&oacute;n promedio de 3.73, un &iacute;ndice general de 3.71 y 326 registros asociados a percepci&oacute;n positiva.</td>
                         </tr>
-                        <tr>
-                            <td>Nivel 3</td>
+                        <tr class="level-visual level-3">
+                            <td><span class="table-indicator"></span>Nivel 3</td>
                             <td>Conocimiento Oculto</td>
-                            <td>Miner&iacute;a de datos para descubrir agrupaciones y relaciones no evidentes.</td>
-                            <td>Orange Data Mining</td>
-                            <td>Identificaci&oacute;n de tres clusters principales y patrones ocultos mediante k-Means, PCA y Scatter Plot.</td>
+                            <td>Proceso de miner&iacute;a en Orange Data Mining con transformaci&oacute;n de variables, normalizaci&oacute;n, k-Means, PCA y Scatter Plot.</td>
+                            <td>El clustering identific&oacute; tres segmentos principales y el PCA facilit&oacute; observar separaci&oacute;n entre grupos, evidenciando patrones ocultos en los datos.</td>
                         </tr>
-                        <tr class="pending-row">
-                            <td>Nivel 4</td>
+                        <tr class="level-visual level-4">
+                            <td><span class="table-indicator"></span>Nivel 4</td>
                             <td>Conocimiento Profundo</td>
-                            <td>Espacio pendiente para an&aacute;lisis avanzado y procesamiento distribuido.</td>
-                            <td>Apache Spark</td>
-                            <td>Espacio reservado para agregar resultados y conclusiones del nivel 4.</td>
+                            <td>Transformaciones con PySpark, depuraci&oacute;n de no respuestas, indicadores por bloques, an&aacute;lisis ponderado por FEXPFINAL y correlaciones entre dimensiones.</td>
+                            <td>La regi&oacute;n 2 tuvo el mayor ambiente ponderado (3.177), la regi&oacute;n 4 lider&oacute; la consulta SQL simple (3.160) y ambiente se asoci&oacute; m&aacute;s con talento humano (0.664) que con desempe&ntilde;o o TIC.</td>
                         </tr>
                     </tbody>
                 </table>
