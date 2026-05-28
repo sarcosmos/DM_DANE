@@ -12,8 +12,8 @@
             <p class="eyebrow">Encuesta EDID 2024 - DANE</p>
             <h1>An&aacute;lisis de opini&oacute;n en Encuestas Regionales del DANE</h1>
             <p class="header-summary">
-                Miner&iacute;a de datos aplicada al an&aacute;lisis de percepciones, evaluaci&oacute;n institucional
-                y descubrimiento de patrones en encuestas gubernamentales.
+                Exploraci&oacute;n de la EDID 2024 para comparar percepciones institucionales por regi&oacute;n,
+                perfil laboral y dimensiones de gesti&oacute;n p&uacute;blica.
             </p>
         </div>
     </header>
@@ -22,26 +22,26 @@
         <section class="intro-section" aria-label="Informacion general del proyecto">
             <article>
                 <span class="section-label">Objetivo general</span>
-                <h2>An&aacute;lisis avanzado de datos institucionales</h2>
+                <h2>Comparar patrones regionales</h2>
                 <p>
-                    Esta aplicaci&oacute;n web integra visualizaci&oacute;n, miner&iacute;a de datos e inteligencia anal&iacute;tica
-                    para convertir informaci&oacute;n estad&iacute;stica oficial en conocimiento &uacute;til.
+                    Identificar diferencias en ambiente laboral, talento humano, TIC, desempe&ntilde;o
+                    y rendici&oacute;n de cuentas entre regiones y perfiles de servidores p&uacute;blicos.
                 </p>
             </article>
             <article>
                 <span class="section-label">Dataset utilizado</span>
-                <h2>Encuesta sobre Ambiente y Desempe&ntilde;o Institucional Departamental</h2>
+                <h2>EDID_REGION.csv</h2>
                 <p>
-                    El proyecto utiliza datos de la EDID 2024, con miles de registros, m&aacute;s de 200 variables
-                    y mediciones regionales, administrativas, categ&oacute;ricas, ordinales y num&eacute;ricas.
+                    Base de <strong>10,994 registros</strong> y <strong>247 variables</strong>, interpretada con
+                    el diccionario XML DDI para reconocer c&oacute;digos de regi&oacute;n, preguntas y factor de expansi&oacute;n.
                 </p>
             </article>
             <article>
                 <span class="section-label">Metodolog&iacute;a</span>
                 <h2>SEMMA</h2>
                 <p>
-                    El proceso contempla selecci&oacute;n de variables, exploraci&oacute;n estad&iacute;stica y visual,
-                    limpieza, transformaci&oacute;n y preparaci&oacute;n de los datos para su an&aacute;lisis.
+                    Selecci&oacute;n de variables, exploraci&oacute;n visual, depuraci&oacute;n de no respuestas,
+                    transformaci&oacute;n de escalas y modelado descriptivo, multidimensional y de clustering.
                 </p>
             </article>
         </section>
@@ -51,51 +51,47 @@
                 <span class="section-label">Anal&iacute;tica gubernamental</span>
                 <h2>Contexto de la problem&aacute;tica</h2>
                 <p>
-                    La lectura de encuestas institucionales requiere conectar percepciones, regiones y perfiles
-                    laborales para convertir respuestas individuales en evidencia accionable.
+                    La encuesta contiene muchas preguntas y c&oacute;digos administrativos; sin preparaci&oacute;n anal&iacute;tica,
+                    las diferencias entre regiones y perfiles quedan dispersas.
                 </p>
             </div>
             <div class="problem-content">
                 <div class="problem-icons" aria-hidden="true">
-                    <span>Datos</span>
-                    <span>Gobierno</span>
-                    <span>Patrones</span>
+                    <span>Regi&oacute;n</span>
+                    <span>Perfil</span>
+                    <span>Bloques</span>
                 </div>
                 <p>
-                    La Encuesta sobre Ambiente y Desempe&ntilde;o Institucional Departamental (EDID 2024)
-                    recopila opiniones de servidores p&uacute;blicos acerca del ambiente laboral, desempe&ntilde;o
-                    institucional, recursos tecnol&oacute;gicos, talento humano y rendici&oacute;n de cuentas dentro
-                    de entidades p&uacute;blicas.
+                    El reto es pasar de respuestas individuales a indicadores comparables. Para ello se agrupan
+                    preguntas en bloques tem&aacute;ticos y se contrastan promedios por regi&oacute;n, sexo, cargo y nivel
+                    ocupacional.
                 </p>
                 <p>
-                    El gran volumen de datos y la cantidad de variables dificultan la identificaci&oacute;n manual
-                    de patrones relevantes entre regiones y perfiles laborales. Por ello, se aplican t&eacute;cnicas
-                    de miner&iacute;a de datos, an&aacute;lisis multidimensional y procesamiento anal&iacute;tico avanzado para
-                    descubrir relaciones, tendencias y comportamientos ocultos que apoyen la toma de decisiones
-                    basada en datos.
+                    La aplicaci&oacute;n combina visualizaci&oacute;n, modelo multidimensional, segmentaci&oacute;n en Orange
+                    y procesamiento con Spark para ubicar patrones visibles, relaciones entre dimensiones y
+                    resultados ponderados por FEXPFINAL.
                 </p>
             </div>
         </section>
 
         <section class="context-cards" aria-label="Contexto y dataset utilizado">
             <article>
-                <span class="info-badge">Problema</span>
-                <h2>Contexto del problema</h2>
+                <span class="info-badge">Alcance</span>
+                <h2>Preguntas que responde</h2>
                 <p>
-                    La EDID 2024 recoge percepciones de servidores p&uacute;blicos sobre ambiente y desempe&ntilde;o
-                    institucional. El objetivo del an&aacute;lisis es preparar la base con PySpark, calcular indicadores
-                    por bloques de preguntas y comparar patrones por regi&oacute;n y perfil laboral.
+                    &iquest;Qu&eacute; regiones muestran mejores promedios de ambiente? &iquest;Qu&eacute; perfiles concentran
+                    resultados altos en talento humano y desempe&ntilde;o? &iquest;Qu&eacute; dimensiones se relacionan con
+                    mayor fuerza?
                 </p>
             </article>
             <article>
                 <span class="info-badge">Dataset</span>
-                <h2>Descripci&oacute;n del dataset utilizado</h2>
+                <h2>Campos usados</h2>
                 <p>
-                    Se cargaron <strong>10,994 registros</strong> y <strong>247 columnas</strong> desde
-                    EDID_REGION.csv. El XML DDI se us&oacute; como diccionario para interpretar c&oacute;digos como
-                    REGION, B02, B04, B06, C01A y FEXPFINAL.
+                    Variables de regi&oacute;n y perfil laboral: REGION, B02, B04 y B06. Preguntas de percepci&oacute;n:
+                    bloques C, D, E, F y G. Ponderaci&oacute;n poblacional: FEXPFINAL.
                 </p>
-                <p>Factor de expansi&oacute;n final corregido con el factor de cobertura.</p>
+                <p>Los c&oacute;digos 8, 9, 88 y 99 se tratan como no respuesta antes de calcular indicadores.</p>
             </article>
         </section>
 
